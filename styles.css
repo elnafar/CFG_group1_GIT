@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set some global styles */
+body {
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style the top navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+nav #nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav #nav-links li {
+    display: inline-block;
+}
+
+nav a.btn {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+
+nav a.btn:first-child {
+    margin: 0 10px 0 0px;
+}
+
+nav a.btn:hover {
+    background-color: #8A2BE2;
+    color: white
+}
+
+#logo {
+    color: #8A2BE2ed;
+    font-size: 24px;
+    margin: 0 0 20px 20px;
+}
+
+
+/* Header section */
+header {
+    text-align: center;
+    padding: 120px;
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: white; 
+    font-size: 24px;
+} 
+
+/* Bio sections */
+
+.bio-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    
+}
+
+.bio-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* New addition: Ensures the image covers the whole area of the div, cropping if necessary */
+    margin-right: 20px; /* Add right margin to create space */
+}
+
+.bio-section div {
+    flex-grow: 1; /* Allow the content to expand and fill the remaining space */
+}
+
+.bio-section:nth-child(odd) div {
+    margin-right: 20px; /* Add right margin to create space */
+}
+
+.bio-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio-section p {
+    font-size: 16px;
+}
+
+#bio1,
+#bio3 {
+    background-color: white;
+    color: black;
+}
+
+#bio2,
+#bio4 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the direction of flex items */
+}
+
+#bio2 img,
+#bio4 img {
+    order: 1; /* Place the image as the second item in the flex container */
+    margin-left: 20px; 
+}
+
+#bio2 div,
+#bio4 div {
+    order: 1; /* Place the content as the first item in the flex container */
+}
+
+#bio2 h3,
+#bio4 h3,
+#bio2 h4,
+#bio4 h4,
+#bio2 p,
+#bio4 p {
+    text-align: right; /* Align the heading and paragraph to the right */
+}
+
+/* Style the footer section */
+footer {
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
