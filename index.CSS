@@ -1,0 +1,145 @@
+.text-wrapper {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    background-color: #EBE7DC;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.display-1 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px 8px 24px;
+    background-color: #EBE7DC;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    text-align: right;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    padding: 16px;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.intro-container {
+    background-color: #EBE7DC;
+}
+
+.intro {
+    text-align: left;
+    /* use the following code line to centre align items -> 'margin: auto;'*/
+    width: 1200px;
+    padding: 180px 10%;
+
+
+}
+
+.sub-heading {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/*.button{
+    text-decoration: none;
+    color: #EBE7DC;
+    padding: 12px 24px;
+    border-radius: 28px;
+    background-color: black;
+    font-weight: 600;
+    font-size: 14px;
+}*/
+
+
+.btn-primary {
+    border-radius: 28px;
+    padding: 12px 24px;
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.btn-primary:hover {
+    background-color: #4e0f88;
+    border-color: #4e0f88;
+}
+
+.whytechheader {
+    padding: 0px 24px 40px 24px;
+    text-align: center;
+    color: #F0F0F0;
+}
+
+h2 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.whytech {
+    background-color: black;
+    text-align: center;
+    padding: 80px 60px;
+}
+
+h4 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.row {
+    text-align: center;
+    padding: 0px 40px 60px 40px;
+    
+}
+
+.container {
+    width: 60%;
+    
+    
+}
+
+.team {
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.teamheader {
+    padding: 0px 24px 40px 24px;
+    text-align: center;
+}
