@@ -1,119 +1,174 @@
-/* Reset some default styles */
-body, h1, h2, h3, h4, p, a {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+.text-wrapper {
+    display: flex;
 }
 
-/* Set some global styles */
 body {
-    line-height: 1.6;
+    margin: 0;
+    background-color: #EBE7DC;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.display-1 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
 }
 
-/* Style the top navigation bar */
-nav {
+.nav-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px;
-    background-color: white;
-    margin-top: 20px;
+    padding: 8px 24px 8px 24px;
+    background-color: #EBE7DC;
+    position: fixed;
+    width: 100%;
 }
 
-nav #nav-links {
-    list-style-type: none;
-    padding: 0;
+.nav-items {
     display: flex;
+    justify-content: space-between;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
-nav #nav-links li {
-    display: inline-block;
+ul {
+    text-align: right;
+    list-style-type: none;
 }
 
-nav a.btn {
-    display: inline-block;
-    height: 35px;
-    line-height: 35px;
-    padding: 0 15px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-    margin-left: 20px;
-}
-
-nav a.btn:first-child {
-    margin: 0 10px 0 0px;
-}
-
-nav a.btn:hover {
-    background-color: #8A2BE2;
-    color: white
-}
-
-#logo {
-    color: #8A2BE2ed;
+li a {
+    text-decoration: none;
+    padding: 16px;
+    color: black;
     font-size: 24px;
-    margin: 0 0 20px 20px;
+    font-weight: 600;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
 
-/* Header section */
-header {
+.intro-container {
+    background-color: #EBE7DC;
+}
+
+.intro {
+    text-align: left;
+    /* use the following code line to centre align items -> 'margin: auto;'*/
+    width: 1200px;
+    padding: 180px 10%;
+
+
+}
+
+.sub-heading {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.btn-primary {
+    border-radius: 28px;
+    padding: 12px 24px;
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.btn-primary:hover {
+    background-color: #4e0f88;
+    border-color: #4e0f88;
+}
+
+.whytechheader {
+    padding: 0px 24px 40px 24px;
     text-align: center;
-    padding: 120px;
-    background-color: black;
-    color: white;
+    color: #F0F0F0;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+h2 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
 }
 
-header h2 {
-    color: white; 
+h3 {
     font-size: 24px;
-} 
+}
+
+.whytech {
+    background-color: black;
+    text-align: center;
+    padding: 80px 60px;
+}
+
+h4 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.row {
+    text-align: center;
+    padding: 0px 40px 60px 40px;
+    
+}
+
+.container {
+    width: 60%;
+    
+    
+}
+
+.team {
+    text-align: center;
+    padding: 80px 60px;
+}
+
+.teamheader {
+    padding: 0px 24px 40px 24px;
+    text-align: center;
+}
+
+/*JE*/
+
+.intro-container-3{
+    background-color: #EBE7DC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-3{
+    background-color: #EBE7DC;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 180px 10%;
+}
+
+.display-3 {
+    font-family: 'Wix Madefor Display', 'Work Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+.sub-heading-3 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
 
 /* Bio sections */
 
 .bio-section {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px;
-    
-}
-
-.bio-image {
-    border-radius: 50%; /* Makes the image circular */
-    width: 200px;
-    height: 200px;
-    object-fit: cover; /* New addition: Ensures the image covers the whole area of the div, cropping if necessary */
-    margin-right: 20px; /* Add right margin to create space */
-}
-
-.bio-section div {
-    flex-grow: 1; /* Allow the content to expand and fill the remaining space */
-}
-
-.bio-section:nth-child(odd) div {
-    margin-right: 20px; /* Add right margin to create space */
-}
-
-.bio-section h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.bio-section p {
-    font-size: 16px;
+    padding: 0 10%;
 }
 
 #bio1,
@@ -122,33 +177,66 @@ header h2 {
     color: black;
 }
 
-#bio2,
-#bio4 {
+#bio2{
     background-color: black;
     color: white;
     display: flex;
     flex-direction: row-reverse; /* Reverse the direction of flex items */
 }
 
-#bio2 img,
-#bio4 img {
+.bio-section div {
+    flex-grow: 1; /* Allow the content to expand and fill the remaining space */
+    padding: 100px 0 100px 0;
+}
+
+#bio2 div{
+    order: 1; /* Place the content as the first item in the flex container */
+}
+
+.bio-heading{
+    font-family: 'Wix Madefor Display', 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.bio-subheading{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.bio-section p {
+    font-size: 16px;
+    line-height: 33px;
+}
+
+#bio2 h1,
+#bio2 h2,
+#bio2 p{
+    text-align: right; /* Align the heading and paragraph to the right */
+}
+
+.bio-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* New addition: Ensures the image covers the whole area of the div, cropping if necessary */
+    margin-right: 20px; /* Add right margin to create space */
+    margin-top: 100px;
+}
+
+#bio2 img{
     order: 1; /* Place the image as the second item in the flex container */
     margin-left: 20px; 
 }
 
-#bio2 div,
-#bio4 div {
-    order: 1; /* Place the content as the first item in the flex container */
-}
 
-#bio2 h3,
-#bio4 h3,
-#bio2 h4,
-#bio4 h4,
-#bio2 p,
-#bio4 p {
-    text-align: right; /* Align the heading and paragraph to the right */
-}
+
+
+
+
+
+
 
 /* Style the footer section */
 footer {
