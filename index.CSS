@@ -2,6 +2,9 @@
     display: flex;
 }
 
+p {
+    font-size: 18px;
+}
 body {
     margin: 0;
     background-color: #EBE7DC;
@@ -22,6 +25,7 @@ body {
     background-color: #EBE7DC;
     position: fixed;
     width: 100%;
+    z-index:1;
 }
 
 .nav-items {
@@ -45,29 +49,27 @@ li a {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: rgb(0, 0, 0);
+    color: #8a2be2;
 }
 
 .intro-container {
     background-color: #EBE7DC;
+    display: flex;
 }
 
 .intro {
     text-align: left;
     /* use the following code line to centre align items -> 'margin: auto;'*/
-    width: 1200px;
-    padding: 180px 10%;
-
-
+    
+    padding: 220px 60px 240px 160px;
 }
 
-.sub-heading {
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+.hero-image {
+padding-top: 120px;
+padding-right: 140px;
 }
+
+
 
 /*.button{
     text-decoration: none;
@@ -93,9 +95,16 @@ a:hover {
 }
 
 .whytechheader {
-    padding: 0px 24px 40px 24px;
+    padding: 0px 160px 40px 160px;
     text-align: center;
     color: #F0F0F0;
+}
+
+.sub-heading {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
 }
 
 h2 {
@@ -106,7 +115,17 @@ h2 {
 }
 
 h3 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
     font-size: 24px;
+}
+
+h4 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .whytech {
@@ -114,6 +133,7 @@ h3 {
     text-align: center;
     padding: 80px 60px;
 }
+
 
 h4 {
     font-family: 'Wix Madefor Display', sans-serif;
@@ -129,7 +149,7 @@ h4 {
 }
 
 .container {
-    width: 60%;
+    width: 64%;
     
     
 }
@@ -142,4 +162,87 @@ h4 {
 .teamheader {
     padding: 0px 24px 40px 24px;
     text-align: center;
+}
+
+.card {
+    padding: 0px;
+  
+}
+
+.mission-section {
+    display: flex;
+    padding: 60px 100px; 
+    background-color:#4e0f88;
+    color: white;
+}
+
+.mission {
+    padding: 100px 100px 100px 40px;
+}
+
+.footer {
+   text-align: center;
+   background-color: #000000;
+   color: white;
+   padding: 30px;
+}
+
+.footer-links {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.social-media {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Facebook {
+    padding: 12px
+}
+
+.Instagram {
+    padding: 12px
+}
+
+.Pinterest {
+    padding: 12px
+}
+
+.Twitter {
+    padding: 12px
+}
+
+#about-link {
+    color: white;
+}
+
+#about-link:hover {
+    color: #8a2be2;
+}
+
+#terms-link {
+    color: white;
+}
+
+#terms-link:hover {
+    color: #8a2be2;
+}
+
+#privacy-link {
+    color: white;
+}
+
+#privacy-link:hover {
+    color: #8a2be2;
+}
+
+#contact-link {
+    color: white;
+}
+
+#contact-link:hover {
+    color: #8a2be2;
 }
